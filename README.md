@@ -9,7 +9,7 @@ Use the shortcode `[timeline_list]` to add the list to a page. Required argument
 
     [timeline_list element='Subject' value='some subject']
 
-####Requirements
+###Requirements
 
 **Supported date formats**:
 - mm/dd/yyy (e.g. 12/31/1999)
