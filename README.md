@@ -24,3 +24,4 @@ _Dates before common era are not supported. Years without a specific date will d
 
 **Server requirements**: Different server platforms and PHP versions may handle certain dates differently. See [documentation for PHP strtotime](https://secure.php.net/manual/en/function.strtotime.php). If you notice all your properly formatted dates being listed as 1970 (or today), your server may not meet the requirements.
 
+![screenshot](screenshot.png)
