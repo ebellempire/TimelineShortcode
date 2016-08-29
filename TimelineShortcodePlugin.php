@@ -108,7 +108,7 @@ function ts_display_timeline_list($args){
 				.timeline-year{
 					font-size: 200%;
 					font-weight: bold;
-					margin-bottom: 1em;
+					margin: 1em auto;
 					border-bottom: 1px solid #ccc;
 					padding-bottom: .25em;
 				}
@@ -121,6 +121,7 @@ function ts_display_timeline_list($args){
 				.timeline-section ul{
 					padding-left: 0;
 					margin-top: 0;
+					list-style-type:none;
 				}
 				.timeline-section ul li{
 					background: #f2f2f2;
