@@ -1,15 +1,15 @@
 # Timeline Shortcode
 An Omeka plugin that adds a shortcode for displaying a list of items sorted by date.
 
-##Usage
+## Usage
 
 Use the shortcode `[timeline_list]` to add the list to a page. Required arguments are `element` and `value`. Optionally, include `featured='true'` to limit results to only featured items.
 
-###Example
+### Example
 
     [timeline_list element='Subject' value='some subject']
 
-###Requirements
+### Requirements
 
 **Supported date formats**:
 - mm/dd/yyy (e.g. 12/31/1999)
