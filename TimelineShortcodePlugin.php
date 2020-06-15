@@ -160,9 +160,11 @@ function ts_display_timeline_list($args){
 			
 			$yearsAlreadyDisplayed=array();
 			foreach($itemsByDate as $dateKey=>$items){
-				if(!array_search(ts_date_format('Y',$dateKey), $yearsAlreadyDisplayed)){
+				if(!in_array(ts_date_format('Y',$dateKey), $yearsAlreadyDisplayed)){
 					$html.= '<div class="timeline-year year-id-'.ts_date_format('Y',$dateKey).'">'.ts_date_format('Y',$dateKey).'</div>';
-					$yearsAlreadyDisplayed[]=ts_date_format('Y',$dateKey);
+					    if(!in_array(ts_date_format('Y',$dateKey), $yearsAlreadyDisplayed, true)){
+					        array_push($yearsAlreadyDisplayed, ts_date_format('Y',$dateKey));
+					    }
 				}
 				
 				$html.= '<div id="date-'.$dateKey.'" class="timeline-section">';
