@@ -173,9 +173,8 @@ function ts_display_timeline_list($args){
 					if($i==1){
 						$html.='<div class="timeline-section-date">'.ts_date_format('d F',$dateKey).'</div><ul>';
 					}
-					$html.= '<li><a href="/items/show/'.$item['id'].'">'.$item['thumbnail'].$item['title'].'</a></li>';
-					
-					$i++;				
+					$html.= '<li><a href="//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'items/show/'.$item['id'].'">'.$item['thumbnail'].$item['title'].'</a></li>';
+					$i++;
 				}
 				$html.= '</ul></div>';
 			}
